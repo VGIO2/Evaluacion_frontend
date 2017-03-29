@@ -6,6 +6,7 @@
 	<title>Examen Herramientas Productividad</title>
 	
 	<link rel="stylesheet" href="src/css/bootstrap.css">
+	<link rel="stylesheet" href="src/icons/css/font-awesome.min.css">
 	<link rel="stylesheet" href="src/css/sweetalert.css">
 	<link rel="stylesheet" href="src/css/style.css">
 	<!--REQUIRED STYLE SHEETS-->
@@ -13,24 +14,23 @@
 
 <body  onload="init()">
     <div id="map" style="height:700px"></div>
-
-	<div class="navbar navbar-inverse navbar-fixed-top">
+    
+    <div class="navbar navbar-inverse navbar-fixed-top navegador" >
 		<div class="container">
-		    <div class="navbar-header page-scroll">
-		        <a class="navbar-brand page-scroll" href="">Carrocomp!</a>
+		  <div class="navbar-header page-scroll">
+		    <img class="main-logo" src="docs/logo-gris.jpg" alt="">
+		      <div class="tooltip"><i class="fa fa-info-circle" aria-hidden="true"></i>
+                 <span class="tooltiptext"><img src="docs/logo-peach.jpg" alt="">La nueva forma de moverteen la ciudad. Con <strong>carrocomp! puedes compartir tu viaje y con amigos y cobrar el costo equitativamente</strong></span>
                   
-                  
-                   <img src="docs/logo-gris.jpg" width="150px;" class="tooltip" alt="">
-		           <i class="" aria-hidden="true" id="icon" > 
-		           <span class="tooltiptext">
-		           <img src="docs/logo-peach.jpg" alt="" width="80px" class="d-inline-block align-top">jdajksdhakjshdajsdhjs 
-		           <img src="docs/logo-gris.jpg" alt="" width="80px" class="d-inline-block align-top">dsjfsdjfhsdf</span></i>
-		           
-
-		        
-		    </div>
+              </div>
+		  </div>
 		</div>
-	</div><!--END NAV SECTION -->
+	</div>
+
+
+
+                  
+<!--END NAV SECTION -->
 
 	
 	<div id="home-sec">   
@@ -79,21 +79,87 @@
                <button id="buscar" class="buscar" > Buscar</button>
 	     </div> 
 	   </div> 
-	 </div><!--END HOME SECTION-->  
-	
+	 </div><!--END HOME SECTION--> 
+<section >  
+	 <div class="container selec_multiple">
+		<h4 class="type"> VEHICULO <br> <small class="type">seleccione</small></h4>
+		<form name="formulario">
+              <div class="row"> 
+                 <div class="col-md-4">
+                    <input type="radio" name="carro"><img  class="figure" src="docs/moto.jpg" alt="" width="40px;">
+                 </div>
+                 <div class="col-md-6 ">
+                    <h5>Motocicleta</h5>
+                    <small class="capacidad">máximo 2 pasajeros</small>
+                 </div>
+              </div>
+              
+              <div class="row">
+                <div class="col-md-4">
+                  <input type="radio" name="carro"><img  class="figure" src="docs/auto.jpg" alt="" width="40px;">
+                </div>
+           
+                <div class="col-md-6">
+                 <h5>Automovil</h5>
+                 <small class="capacidad">máximo 5 pasajeros</small>
+                </div>
+              </div>
+        
+              <div class="row"> 
+                <div class="col-md-4">
+                 <input type="radio" name="carro"><img  class="figure" src="docs/van.jpg" alt="" width="40px;">
+                </div>
+           
+               <div class="col-md-6">
+                 <h5>Minivan</h5>
+                 <small class="capacidad">máximo 10 pasajeros</small>
+               </div>
+             </div>
+        
+              <div class="row"> 
+                 <div class="col-md-4">
+                   <input type="radio" name="carro"><img class="figure" src="docs/camion.jpg" alt="" width="40px;">
+                 </div>
+           
+                 <div class="col-md-6">
+                    <h5>Camion</h5>
+                    <small class="capacidad">máximo 5 pasajeros</small>
+                 </div>
+               </div>
+               <div class="row cuantity">
+                 <div class="col-md-7"><h5><strong>Cantidad de pasajeros</strong></h5></div>
+                 <div class="col-md-5"><input type="text" id="cantidad"></div>
+               </div>
+               
+               
+               
+               </div>
+               
+          </div>
+     <button id="buscar" class="buscar1" >Compartir carro</button>
+		
+</section> 
 	
 
-<section class="container-menu">    
-    <div id="setPickUp">
-           <div class="dropup">>
-             
-             <ul id="eleccion" class="dropdown-menu list-car" aria-labelledby="dropdownMenu2">
+  
+    
+      
         
-               
-             </ul>
-           </div>
-        </div>
-</section>   <!--END ABOUT SECTION-->
+          
+            
+              
+                
+                  
+                    
+                      
+                        
+                          
+                            
+                              
+                                
+                                  
+                                    
+                                        <!--END ABOUT SECTION-->
 	
 	
 	<section id="calculator" >

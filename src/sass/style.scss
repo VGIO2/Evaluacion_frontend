@@ -1,5 +1,20 @@
+body{
+    
+}
 
-@mixin flotante {
+/*        HEADER*/
+.navegador{
+    background-color: white;  
+}
+
+.main-logo{
+    width: 180px;
+    padding: 8px 0;
+}
+
+
+
+@mixin float{
    position: absolute;
    width: 30%;
 }
@@ -19,7 +34,7 @@
 }
 #home-sec {
    .seleccionar {
-       @include flotante;
+       @include float;
        top: 85px;
        background: #fff;
        padding: 0px 20px 20px 20px;
@@ -29,10 +44,13 @@
        }
    }
    .buscar {
-       @include flotante;
+       @include float;
        @include borde;
        @include boton-naranja;
        top: 178px;
+       background: #fec95c;
+	   width: 100%;
+       margin-left: -18px;
    }
    select {
        border-color: #ffc56e;
@@ -43,31 +61,55 @@
 }
 
 /*--------------------info*/
+.selec_multiple{
+    padding-top: 20px;
+    @include float;
+    background: #fff;
+    padding: 3px 8px;
+    left: 65px; 
+    top: 300px;
+    padding-left: 45px;
+    margin-top: 10px;
+    
+    .type{
+        letter-spacing: 8px;
+    }
+    label{
+        margin-left: 40px;
+        padding-left: 25px;
+    }
+    .figure{
+        margin-left: 25px;
+    }
+    .capacidad{
+        margin-top: 15px;
+    }
+    h5{
+        font-weight: bold;
+        margin: 0;
+    }
+    .row{
+        margin-bottom: 10px;
+    }
+    
+}
 
-.container-menu{
-position: absolute;
-bottom:0px;
- right:0px;
- left: 0px;
-margin-bottom: 0px;
-}
-.car {
-    width: 100px;
-    margin-top: 38%;
-    margin-left: 15px;
-}
-.time{
-    padding-left: 8px;
-}
-.dropup {
- background-color: #fff;
- border-radius: 5px;
- border: 1px solid #ddd;
- padding-top: 5px;
+.buscar1 {
+       @include float;
+       @include borde;
+       @include boton-naranja;
+       top: 620px;
+       background: #fec95c;
+	   width: 30%;
+       margin-left: 66px;
+       
+
+   }
+.cuantity{
+    margin-top: 15px;
+    input{
+        font-size: 8px;
+    }
 }
 
-
-.dropup .list-car {
- width: 85%;
- margin-bottom: 15px;
-}
+ 
